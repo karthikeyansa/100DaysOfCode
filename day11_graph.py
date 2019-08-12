@@ -1,5 +1,5 @@
 def find_path(graph, start, end, path): 
-	path.append(start) 
+	path.append(start)
 	if start == end: 
 		return path 
 	for node in graph[start]: 
