@@ -18,8 +18,7 @@ db.session.commit()
 admin = User('admin1', 'admin1@example.com')
 guest = User('guest1', 'guest1@example.com')
 # Insert queries
-db.session.add(admin)
-db.session.add(guest)
+db.session.add(adminONdb.session.add(guest)
 db.session.commit()
 # Select operations
 print(User.query.filter_by(username='admin').first())
