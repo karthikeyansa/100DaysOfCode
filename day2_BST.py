@@ -10,6 +10,7 @@ def insert_node(root_node, new_node):
 			root_node.right = new_node
 		else:
 			insert_node(root_node.right, new_node)
+			break
 	else:
 		if root_node.left is None:
 			root_node.left = new_node
