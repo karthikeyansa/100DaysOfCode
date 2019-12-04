@@ -13,7 +13,8 @@ string = '459'
 dict = {}
 result_permutation = permutation(string, dict)
 result_permutation = result_permutation.keys()
-result_permutation.sort(key=len, reverse=True)
+result_permutation = list(result_permutation)#list conversion
+result_permutation.sort(key=len, reverse=True)#dict_key as no sot attribute so converted to list
 print(result_permutation)
 result_combination = list(permutations(list(string)))
 print(result_combination)
